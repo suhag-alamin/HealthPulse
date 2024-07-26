@@ -83,6 +83,9 @@ export const PasskeyModal = () => {
           <AlertDialogDescription>
             To access the admin page, please enter the passkey.
           </AlertDialogDescription>
+          <AlertDialogDescription>
+            Demo passkey: <span className="shad-primary">123456</span>
+          </AlertDialogDescription>
         </AlertDialogHeader>
         <div>
           <InputOTP
