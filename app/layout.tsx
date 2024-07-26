@@ -1,9 +1,8 @@
-import type { Metadata } from "next";
-import "./globals.css";
-import { Plus_Jakarta_Sans as FontSans } from "next/font/google";
-import { ThemeProvider } from "next-themes";
-
 import { cn } from "@/lib/utils";
+import type { Metadata } from "next";
+import { ThemeProvider } from "next-themes";
+import { Plus_Jakarta_Sans as FontSans } from "next/font/google";
+import "./globals.css";
 
 const fontSans = FontSans({
   subsets: ["latin"],
@@ -15,9 +14,6 @@ export const metadata: Metadata = {
   title: "HealthPulse",
   description:
     "A healthcare patient management System designed to streamline patient registration, appointment scheduling, and medical records management for healthcare providers.",
-  icons: {
-    icon: "/favicon.ico",
-  },
 };
 
 export default function RootLayout({
@@ -27,6 +23,9 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
+      <head>
+        <link rel="icon" href="/favicon.ico" />
+      </head>
       <body
         className={cn(
           "min-h-screen bg-dark-300 font-sans antialiased",
